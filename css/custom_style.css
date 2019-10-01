@@ -1,0 +1,59 @@
+.custom_listItems {
+    color: #fff;
+}
+
+.custom_listItems {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  
+  .custom_listItems li h4 {
+    padding-left: 1em;
+    text-indent: -1em;
+    display: inline-block;
+  }
+  
+  .custom_listItems li:before {
+    content: "*";
+    padding-right: 5px;
+  }
+
+  .custom_icon {
+    margin-left: 16px; 
+  }
+
+  .textBold {
+    font-weight: bold !important;
+  }
+
+.customStyledList {
+  list-style-type: none;
+}
+
+.customStyledList li {
+  padding: 10px;
+  /* border: 1px solid #f2f2f2; */;
+  list-style-type: square;
+}
+
+.featureHead {
+  margin-top: 18% !important;
+}
+
+.printHead {
+  margin-top: 10% !important;
+}
+
+.fontBlue h4, .fontBlue p, .fontBlue ul li  {
+  font: #283d50 !important;
+}
+
+.custom_footLinks li {
+  padding-left: 16px !important;
+}
+
+.custom_jumboList li {
+  list-style-image: url(../img/light-bulb_list.png);
+  padding: 5px;
+}
