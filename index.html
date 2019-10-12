@@ -37,13 +37,42 @@
     License: https://bootstrapmade.com/license/
   ======================================================= -->
 
-<style>
+  <style>
+    .custom_logoImg {
+      transform: scale(0.5, 0.5);
+    }
 
-.custom_logoImg {
-  transform: scale(0.5,0.5);
-}
+    .hiddenHeader {
+      padding-top: 14px;
+      z-index: 999;
+      position: relative;
+      padding-bottom: 10px;
+    }
 
+    .main-nav {
+      padding-top: 14px !important;
+    }
 
+    #header.header-scrolled .custom_logoImg {
+      padding-top: 10px !important;
+    }
+
+    @media screen and (max-width:768px) {
+      .hiddenHeader {
+        display: none;
+      }
+
+      .custom_logoImg {
+        transform: scale(0.35, 0.35);
+      }
+
+      #header .logo img {
+        margin-top: -32px;
+      }
+
+    }
+
+    /* 
 .social-links {
   padding-left: 76%;
 }
@@ -86,9 +115,8 @@
   padding-left: 0 !important;
 }
 
-}
-
-</style>
+} */
+  </style>
 
 </head>
 
@@ -97,24 +125,33 @@
   <!--==========================
   Header
   ============================-->
+  <div class="container">
+    <div class="hiddenHeader">
+      <div class="col-md-12 clearfix">
+        <div class="social-links float-right">
+          <a href="https://twitter.com/our_print" class="twitter" target='_blank'><i class="fa fa-twitter"></i></a>
+          <a href="https://facebook.com/our.print.77" class="facebook" target='_blank'><i
+              class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/OUR_PRINT/" class="instagram" target='_blank'><i
+              class="fa fa-instagram"></i></a>
+          <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
+          <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <header id="header" class="fixed-top">
     <div class="container">
-
       <div class="logo float-left custom_logoImg" style="margin-top: -20px;">
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> logo-only -->
         <a href="#intro" class=""><img src="img/ourprint_logo.png" alt="main_logo" class="img-fluid"></a>
-		<!-- <h4 style="font-weight: bold;color: #1545b3;margin-top: 10px;">OUR PRINT </h4> -->
+        <!-- <h4 style="font-weight: bold;color: #1545b3;margin-top: 10px;">OUR PRINT </h4> -->
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
-        <div class="social-links">
-          <a href="https://twitter.com/our_print" class="twitter" target='_blank'><i class="fa fa-twitter"></i></a>
-          <a href="https://facebook.com/our.print.77" class="facebook" target='_blank'><i class="fa fa-facebook"></i></a>
-          <a href="https://www.instagram.com/OUR_PRINT/" class="instagram" target='_blank'><i class="fa fa-instagram"></i></a>
-          <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
-          <!-- <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
-        </div>
+
         <ul>
           <li class="active"><a href="#intro">Home</a></li>
           <li><a href="#services">How It Works</a></li>
@@ -161,9 +198,15 @@
       <div class="intro-info">
         <h2>Welcome Buddy</h2>
         <ul class="custom_listItems">
-          <li><h4>Student Prints for <strong>free</strong></h4></li>
-          <li><h4>Learn more efficiently</h4></li>
-          <li><h4>Made with <strong>LOVE</strong> from Students for Students</h4></li>
+          <li>
+            <h4>Student Prints for <strong>free</strong></h4>
+          </li>
+          <li>
+            <h4>Learn more efficiently</h4>
+          </li>
+          <li>
+            <h4>Made with <strong>LOVE</strong> from Students for Students</h4>
+          </li>
         </ul>
         <div>
           <!-- <a href="#services" class="btn-get-started scrollto">How It Works</a> -->
@@ -176,62 +219,63 @@
 
   <main id="main">
 
-     <!--==========================
+    <!--==========================
       Services Section
     ============================-->
     <section id="services" class="section-bg">
-        <div class="container">
-  
-          <header class="section-header">
-            <h3>How It Works...</h3>
-            <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
-          <p>&nbsp;</p>
-          </header>
-  
-          <div class="row">
-  
-            <div class="col-md-6 col-lg-6 col-sm-12  wow bounceInUp" data-wow-duration="1.4s">
-              <div class="box">
-                <div class="icon custom_icon">
-                  <i class="ion-ios-cloud-upload" style="color: #ff689b;"></i>
-                </div>
-                <h6 class="title"><a href="javascript:void(0)">Upload Your Scripts</a></h6>
-                <p class="description">Upload your learning material as PDF 
-                    or DOX and get started right away!! <br />
-                    <a href="http://www.ourprint.in/users/v2/index.html#/signup">>> Register For Free</a>
-                    </p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 wow bounceInUp" data-wow-duration="1.4s">
-              <div class="box">
-                <div class="icon custom_icon">
-                  <!-- <i class="ion-ios-print" style="color: #e9bf06;"></i> -->
-                  <i class="ion-ios-printer" style="color: #e9bf06;"></i>
-                </div>
-                <h6 class="title"><a href="javascript:void(0)">Print Your Learning Material For Free</a></h6>
-                <p class="description">All materials range from <strong>25 to 100</strong> pages
-                    can be printed for free …
-                    <br />
-                   <a class="text-right" href="http://www.ourprint.in/users/v2/index.html#/signup">>> Start Now</a>
-                    </p>
+      <div class="container">
 
+        <header class="section-header">
+          <h3>How It Works...</h3>
+          <!-- <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p> -->
+          <p>&nbsp;</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-6 col-sm-12  wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon custom_icon">
+                <i class="ion-ios-cloud-upload" style="color: #ff689b;"></i>
               </div>
+              <h6 class="title"><a href="javascript:void(0)">Upload Your Scripts</a></h6>
+              <p class="description">Upload your learning material as PDF
+                or DOX and get started right away!! <br />
+                <a href="http://www.ourprint.in/users/v2/index.html#/signup">>> Register For Free</a>
+              </p>
             </div>
-  
-            <div class="col-md-6 offset-md-3 col-lg-6 col-sm-12 offset-lg-3 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-              <div class="box">
-                <div class="icon custom_icon">
-                  <i class="ion-ios-copy" style="color: #3fcdc7;"></i>
-                </div>
-                <h4 class="title"><a href="javascript:void(0)">Delivery at your door step!!</a></h4>
-                <p class="description">Order your prints and our team will carefully 
-                    pack it  and get it delivered at your door step
-                    <br />
-                   <a class="text-right" href="http://www.ourprint.in/users/v2/index.html#/signup">>> Order Your Copy</a>
-                    </p>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon custom_icon">
+                <!-- <i class="ion-ios-print" style="color: #e9bf06;"></i> -->
+                <i class="ion-ios-printer" style="color: #e9bf06;"></i>
               </div>
+              <h6 class="title"><a href="javascript:void(0)">Print Your Learning Material For Free</a></h6>
+              <p class="description">All materials range from <strong>25 to 100</strong> pages
+                can be printed for free …
+                <br />
+                <a class="text-right" href="http://www.ourprint.in/users/v2/index.html#/signup">>> Start Now</a>
+              </p>
+
             </div>
-            <!-- <div class="col-md-4 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          </div>
+
+          <div class="col-md-6 offset-md-3 col-lg-6 col-sm-12 offset-lg-3 wow bounceInUp" data-wow-delay="0.1s"
+            data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon custom_icon">
+                <i class="ion-ios-copy" style="color: #3fcdc7;"></i>
+              </div>
+              <h4 class="title"><a href="javascript:void(0)">Delivery at your door step!!</a></h4>
+              <p class="description">Order your prints and our team will carefully
+                pack it and get it delivered at your door step
+                <br />
+                <a class="text-right" href="http://www.ourprint.in/users/v2/index.html#/signup">>> Order Your Copy</a>
+              </p>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
                 <h4 class="title"><a href="">Magni Dolores</a></h4>
@@ -239,8 +283,8 @@
                   mollit anim id est laborum</p>
               </div>
             </div> -->
-  
-            <!-- <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+
+          <!-- <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
               <div class="box">
                 <div class="icon"><i class="ion-ios-world-outline" style="color: #d6ff22;"></i></div>
                 <h4 class="title"><a href="">Nemo Enim</a></h4>
@@ -256,13 +300,13 @@
                   soluta nobis est eligendi</p>
               </div>
             </div> -->
-  
-          </div>
-          <div class="row about-container">
 
-            <div class="col-lg-6 content order-lg-1 order-1">
-              <h3 class="textBold text-center featureHead">
-                <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </div>
+        <div class="row about-container">
+
+          <div class="col-lg-6 content order-lg-1 order-1">
+            <h3 class="textBold text-center featureHead">
+              <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                 ea commodo consequat.
               </p>
@@ -290,34 +334,36 @@
               Features of OUR PRINT
 
             </h3>
-            </div>
-  
-            <div class="col-lg-6 background order-lg-2 order-2 wow fadeInUp">
-              <!-- <img src="img/about-img.svg" class="img-fluid" alt=""> -->
-              <ul class="customStyledList">
-                <li>Free carbon efficient printing.</li>
-                <li>  Plastic free and durable binding.</li>
-                 <li>Get connected with the corporate world.</li>
-                 <li>Get TWO books maximum up to 200 pages in colour or B/W</li>
-                 <li>*Delivery at your place.</li>                   
-              </ul>
-              <p>&nbsp;</p>
-            </div>
           </div>
-  
-          <div class="row">
-            <div class="col-lg-6 content order-lg-1 order-1 wow fadeInUp shiftBottom">
-              <!-- <img src="img/about-extra-1.svg" class="img-fluid" alt=""> -->
-              <p>
-                Our carbon footprint reduction printers help supporting environment. Here, at OUR PRINT we make business nature friendly. We plan to plant a tree for every 5500 papers printed via OUR PRINT. 
-              </p>
-              <p>
-                Our Print revolutionises printing, making it free and easy to use. We kindly appeal you to be responsible with your Prints.
-              </p>
-            </div>
-            <div class="col-lg-6 background order-lg-2 order-2 wow fadeInUp pt-5 pt-lg-0 shiftTop">
-              <h3 class="textBold text-center printHead">PRINT and PLANT</h3>
-              <!-- <p>
+
+          <div class="col-lg-6 background order-lg-2 order-2 wow fadeInUp">
+            <!-- <img src="img/about-img.svg" class="img-fluid" alt=""> -->
+            <ul class="customStyledList">
+              <li>Free carbon efficient printing.</li>
+              <li> Plastic free and durable binding.</li>
+              <li>Get connected with the corporate world.</li>
+              <li>Get TWO books maximum up to 200 pages in colour or B/W</li>
+              <li>*Delivery at your place.</li>
+            </ul>
+            <p>&nbsp;</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 content order-lg-1 order-1 wow fadeInUp shiftBottom">
+            <!-- <img src="img/about-extra-1.svg" class="img-fluid" alt=""> -->
+            <p>
+              Our carbon footprint reduction printers help supporting environment. Here, at OUR PRINT we make business
+              nature friendly. We plan to plant a tree for every 5500 papers printed via OUR PRINT.
+            </p>
+            <p>
+              Our Print revolutionises printing, making it free and easy to use. We kindly appeal you to be responsible
+              with your Prints.
+            </p>
+          </div>
+          <div class="col-lg-6 background order-lg-2 order-2 wow fadeInUp pt-5 pt-lg-0 shiftTop">
+            <h3 class="textBold text-center printHead">PRINT and PLANT</h3>
+            <!-- <p>
                 Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis
                 occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
               </p>
@@ -325,35 +371,36 @@
                 Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt
                 veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
               </p> -->
-            </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 wow fadeInUp">
-              <div class="jumbotron fontBlue">
-                <h4 class="text-center textBold">Simple Stat</h4>
-                <p class="text-center">A single student approximately uses 2000-3000 papers/year (E.g.: Textbooks, Study Material, Lab materials etc...).
-                </p>
-                <div class="row">
-                  <div class="col-md-4 text-center">
-                    <img src="img/light-bulb.png" />
-                  </div>
-                  <div class="col-md-6">
-                      <ul class="custom_jumboList">
-                          <li>Producing equivalent to 224kg/year of CO<sub>2</sub></li>
-                          <li>Using equivalent to 24 Tonnes/per of coal</li>
-                          <li>Wasting Water equivalent to 302 litres/year while paper production. </li>
-                          <li>Approximately 0.2 Million Sheets Paper/Tonne.</li>
-                          <small class="help-block text-info">*ALL CALCULATION MADE PER TONNE OF PAPER </small>
-                        </ul>
-                  </div>
-                </div>
-              
-              </div>
-            </div>
-          </div>
-  
         </div>
-      </section><!-- #services -->
+        <div class="row">
+          <div class="col-lg-12 wow fadeInUp">
+            <div class="jumbotron fontBlue">
+              <h4 class="text-center textBold">Simple Stat</h4>
+              <p class="text-center">A single student approximately uses 2000-3000 papers/year (E.g.: Textbooks, Study
+                Material, Lab materials etc...).
+              </p>
+              <div class="row">
+                <div class="col-md-4 text-center">
+                  <img src="img/light-bulb.png" />
+                </div>
+                <div class="col-md-6">
+                  <ul class="custom_jumboList">
+                    <li>Producing equivalent to 224kg/year of CO<sub>2</sub></li>
+                    <li>Using equivalent to 24 Tonnes/per of coal</li>
+                    <li>Wasting Water equivalent to 302 litres/year while paper production. </li>
+                    <li>Approximately 0.2 Million Sheets Paper/Tonne.</li>
+                    <small class="help-block text-info">*ALL CALCULATION MADE PER TONNE OF PAPER </small>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #services -->
 
     <!--==========================
       About Us Section
@@ -363,7 +410,10 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>OUR group as a team starts on a new journey to make Student document printing for free across India. Our core belief is that ‘Paper is essential stationary for education’. Many have tried to do the paperless things but majority in India ends up with constant headache and poor eyesight. We as students with love towards students stood up providing free printing solution in Hyderabad.
+          <p>OUR group as a team starts on a new journey to make Student document printing for free across India. Our
+            core belief is that ‘Paper is essential stationary for education’. Many have tried to do the paperless
+            things but majority in India ends up with constant headache and poor eyesight. We as students with love
+            towards students stood up providing free printing solution in Hyderabad.
           </p>
           <div class="text-center textBold">Our Print is India’s first free Printing Solution!!</div>
         </header>
@@ -421,10 +471,10 @@
             </p>
           </div>
         </div> -->
-      
+
 
       </div>
-    </section><!-- #about -->   
+    </section><!-- #about -->
 
     <!--==========================
       Why Us Section
@@ -986,30 +1036,33 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>Our Print</h3>
-            <p>OUR group as a team starts on a new journey to make Student document printing for free across India. Our core belief is that ‘Paper is essential stationary for education’. Many have tried to do the paperless things but majority in India ends up with constant headache and poor eyesight. We as students with love towards students stood up providing free printing solution in Hyderabad.</p>
+            <p>OUR group as a team starts on a new journey to make Student document printing for free across India. Our
+              core belief is that ‘Paper is essential stationary for education’. Many have tried to do the paperless
+              things but majority in India ends up with constant headache and poor eyesight. We as students with love
+              towards students stood up providing free printing solution in Hyderabad.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
             <div class="row">
               <div class="col-md-4"></div>
               <div class="col-md-8">
-                  <h4 class="">Useful Links</h4>
-                  <ul class="custom_footLinks">
-                    <li><a href="#header">Home</a></li> 
-              <li><a href="#services">How It Works</a></li>
-                <li><a href="#about">About Us</a></li>
-                    <li><a href="">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
-                  </ul>
+                <h4 class="">Useful Links</h4>
+                <ul class="custom_footLinks">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#services">How It Works</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                </ul>
               </div>
             </div>
-            
+
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
 
             <h4>Contact Us</h4>
-            <p>            
+            <p>
               H.No 3-10-20/54/A/3<br>
               Gokhale Nagar, Ramantapur <br>
               Hyderabad <br>
@@ -1017,7 +1070,7 @@
               Pin : 500013
               <!-- <strong>Phone:</strong> +1 5589 55488 55<br>
               <strong>Email:</strong> info@example.com<br> -->
-            </p>           
+            </p>
 
           </div>
 
@@ -1034,11 +1087,13 @@
         <div class="row">
           <div class="col-md-6"></div>
           <div class="col-md-6 col-sm-12 col-xs-12 text-left">
-              <div class="social-links">
-                  <a href="https://twitter.com/our_print" class="twitter" target='_blank'><i class="fa fa-twitter"></i></a>
-                  <a href="https://facebook.com/our.print.77" class="facebook" target='_blank'><i class="fa fa-facebook"></i></a>
-                  <a href="https://www.instagram.com/OUR_PRINT/" class="instagram" target='_blank'><i class="fa fa-instagram"></i></a>
-                </div>
+            <div class="social-links">
+              <a href="https://twitter.com/our_print" class="twitter" target='_blank'><i class="fa fa-twitter"></i></a>
+              <a href="https://facebook.com/our.print.77" class="facebook" target='_blank'><i
+                  class="fa fa-facebook"></i></a>
+              <a href="https://www.instagram.com/OUR_PRINT/" class="instagram" target='_blank'><i
+                  class="fa fa-instagram"></i></a>
+            </div>
           </div>
         </div>
       </div>
